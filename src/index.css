@@ -1,0 +1,122 @@
+:root {
+      --primary-color: #3498db;
+      --secondary-color: #2ecc71;
+      --background-color: #f4f6f9;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background-color);
+      margin: 0;
+      padding: 20px;
+      color: var(--text-color);
+    }
+
+    .app-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .header-actions button {
+      margin-left: 10px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .essay-config-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .essay-config-form input,
+    .essay-config-form select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .action-buttons button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+    }
+
+    .essay-display {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .word-count {
+      font-weight: bold;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    .modal h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .modal input,
+    .modal select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .modal button {
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
